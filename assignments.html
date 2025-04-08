@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>YouTube.com practice</title>
+  <style>
+    .thumbnail{
+      width: 300px;display: block;
+    }
+    
+    .name,
+    .email{
+      display: block;
+    }
+
+    .thanks{
+      display: inline-block;width: 250px;
+    }
+    .yes{
+      display: inline-block;
+    }
+
+    .no{
+      display: inline-block;
+    }
+
+    .gg img{
+      width: 200px;
+      margin-bottom: 0px;
+      margin-left: 70px;
+    }
+
+    .gg input{
+      box-shadow: rgba(10px, 10px, 10px, alpha);
+      display: block;
+      margin-top:0px;
+      width: 350px;
+      height: 36px;
+      border-radius: 20px;
+      border-width: 1px;
+      margin-bottom: 10px;
+    }
+
+    .a{
+      display: inline-block;
+      height: 36px;
+    }
+
+    .b{display: inline-block;
+      height: 36px;
+    }
+
+    .c{display: block;
+      margin-top: 6px;
+      width: 335px;
+      height: 36px;
+    }
+
+    .sign{
+      background-color: rgb(42, 88, 121);
+      color: white;
+      border-radius: 8px;
+      border: none;
+      margin-top: 6px;
+      margin-bottom: 10px;
+      width: 344px;
+      height: 45px;
+      font-weight: bold;
+    }
+
+    .request{
+      font-size:30px;
+      font-weight: lighter;
+      margin-bottom: 10px;
+    }
+
+    .enter{
+      width: 300px;
+      color: rgb(159, 154, 154);
+      height: 30px;
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .dest{
+      width: 300px;
+      color: rgb(159, 154, 154);
+      height: 30px;
+      display: block;
+      margin-bottom: 12px;
+    }
+
+    .now{
+      background-color: black;
+      color:white;
+      height: 30px;
+      width: 100px;
+      border: none;
+      margin-right: 6px;
+    }
+
+    .schedule{
+      background-color: rgb(196, 191, 191);
+      color: black;
+      height: 30px;
+      width: 120px;
+      border: none;
+    }
+
+    .now,
+    .schedule{
+      display:inline-block;
+      vertical-align:middle;
+    }
+
+    .square{
+      background-color: red;
+      height: 50px;
+      width: 50px;
+      border: none;
+      margin-top: 20px;
+    }
+
+    .circle{
+      background-color: green;
+      height: 50px;
+      width: 50px;
+      border-radius: 90px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+
+    .satisfied{
+      width: 150;
+      height: 70px;
+      border:2px solid black;
+      padding: 20px;
+      display: inline-block;
+    }
+
+    .y{
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .n{
+      display: inline-block;
+      vertical-align: middle;
+    }
+    
+
+    .install{
+      width: 350px;
+      height: 150px;
+      border:6px dashed rgb(7, 32, 155);
+      display: block;
+      background-color: rgb(47, 42, 42);
+    }
+
+    .iym{
+      color: white;font-weight: bold;
+      font-size: 30px;
+    }
+
+    .aym{
+      color: rgb(218, 213, 213);
+      width: 340px;}
+
+    .i-must{
+      background-color: rgb(117, 169, 103);
+      width: 214px;
+      height: 86px;
+      color: aliceblue;
+      border: 4px solid rgb(11, 11, 11);
+      margin-top: 10px;
+      margin-left: 10px;
+    }
+
+    .i-must button{
+      border: none;
+      background-color: black;
+      color: white;
+      border-color: rgb(216, 35, 35);
+      margin-bottom: 20px;
+      margin-left:50px;
+    }
+
+    .i-must p{
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .parent{
+      display: flex;
+    }
+  
+    .main{
+      margin-top: 20px;
+      display: inline-block;
+      border:2px solid black;
+      vertical-align: top;
+    }
+
+    .cat-profile{
+      display: inline-block;
+      width: 100px;
+      height: 100px;
+      vertical-align:top;
+    }
+
+    .cat{
+      width: 80px;
+      border-radius: 50px;
+      margin: 10px;
+    }
+
+    .names{
+      display: inline-block;
+      width: 100px;
+      height: 100px;
+      vertical-align:top;
+    }
+
+    .oliver{
+      width:120px;
+      height: 10px;
+    }
+
+    .catp{
+      width:100px;
+      height: 10px;
+    }
+
+    .popular{
+      width:100px;
+      height: 10px;
+    }
+
+    .o,
+    .tc,
+    .p{
+      text-align: center;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .tt{
+      background-color: rgb(36, 122, 164);
+      border: none;
+       vertical-align: middle;
+       margin-top: 30px;
+       color: aliceblue;
+       font-size: 12px;
+       height: 30px;
+       width: 70px;
+       font-weight: bold;
+       margin-right: 10px;
+       margin-left: 10px;
+       transition: 0.25s;
+      }
+
+      .tt:hover{
+        background-color: rgb(7, 62, 108);
+        cursor: pointer;
+        text-decoration: underline;
+      }
+
+      .tb{
+        display: inline-block;
+        margin-left: 16px;
+      }
+
+      .main1,
+      .main2,
+      .main3{
+        display: block;
+      }
+
+      .o{
+        font-weight: bold;
+      }
+
+      .mbpixdiv{
+        width: 200px;
+        margin-top: 40px;
+      }
+
+      .mbpix{
+        width:100%;
+      }
+
+      .mr-b{
+        margin-top:2px;
+        margin-bottom: 6px;
+        font-weight: bold;
+        font-size: 14px;
+      }
+
+      .mrblogo-div{
+        width: 30px;
+        display: inline-block;
+      }
+
+      .mrblogo{
+        border-radius: 30px;
+        width: 100%;
+        margin-bottom: 8px;
+      }
+
+      .mutual{
+        display: inline-block;
+        vertical-align:top;
+        margin-left: 6px;
+        margin-top:9px;
+        font-weight: bold;
+        color: rgb(124, 120, 120);font-size: 13px;
+      }
+
+      .add-friends{
+        height: 26px;
+        background-color: rgb(36, 122, 164);
+        color: white;
+        border: none;
+        width: 85px;
+         transition: 0.25s;
+         font-weight: bold;
+         font-size: 12px;
+        }
+
+      .add-friends:hover{
+        background-color: rgb(7, 62, 108);
+        cursor: pointer;
+        text-decoration: underline;}
+
+      .mrb-layout{
+        background-color: rgb(237, 242, 242);
+        display: inline-block;
+        display: inline-block;
+      }
+
+  </style>
+
+</head>
+
+<body>
+  <input class="search-bar" type="text" placeholder="Search">
+
+  <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
+ 
+  <p>
+    Talking Tech and AI with Google CEO Sundar Pichai!
+  </p>
+
+  <p class="video-author">
+    Marquez Brownlee &#10003;
+  </p>
+
+  <p class="video-stat">
+    3.4M views &#183; 6 months ago
+  </p>
+
+<input class="name" type="text" placeholder="Name">
+
+<input class="email" type="text" placeholder="Email">
+
+<p class="thanks">
+  Thanks for chatting with our customer support. Would you like to take our quick survey?
+</p>
+
+<button class="yes">Yes</button>
+
+<button class="no">No</button>
+
+<div class="gg">
+
+<img src="https://cdn.mos.cms.futurecdn.net/EdmRrzoHxUWdRk8XzKrQG9-480-80.jpg">
+
+<input type="text" placeholder="Search Google or type URL">
+
+</div>
+
+<input class="a" type="text" placeholder="First name">
+
+<input class="b" type="text" placeholder="First name">
+
+<input class="c" type="text" placeholder="Email">
+
+<button class="sign">
+  Sign Up
+</button>
+
+
+<p class="request">
+  Request a ride now
+</p>
+
+<input class="enter" type="text" placeholder="Enter pickup location">
+
+<input class="dest" type="text" placeholder="Enter destination">
+
+<button class="now">
+  Request now
+</button>
+
+<button class="schedule">
+  Schedule for later
+</button>
+
+<div class="square">
+</div>
+
+<div class="circle">
+</div>
+
+<div class="satisfied">
+
+<p>
+  Satisfied with our service?
+</p>
+
+<button class="y">
+  Yes
+</button>
+
+<button class="n">
+  No
+</button>
+
+</div>
+
+
+
+<div class="parent">
+
+  <div class="install">
+    <p class="iym">
+     Install YouTube Music
+    </p>
+   <p class="aym">
+      Add YouTube Music to your desktop for quick and easy access
+   </p>
+
+    </div>
+  
+  
+  <div class="i-must">
+
+  <p>
+    I must get this margin-right
+  </p>
+
+  <button>
+    watch and see
+  </button>
+
+  </div>
+
+  
+</div>
+
+
+
+
+<div class="main">
+
+<div class="cat-profile">
+  <img class="cat" src="thumbnails/channel-3.jpeg">
+
+</div>
+
+<div class="names">
+
+<div class="oliver">
+
+  <p class="o">
+    oliver
+  </p>
+
+</div>
+
+<div class="catp">
+
+  <p class="tc">
+    the cat
+  </p>
+
+</div>
+
+<div class="popular">
+
+  <p class="p">
+    popular
+  </p>
+  
+</div>
+</div>
+</div>
+
+
+
+<div class="main">
+  <div class="cat-profile">
+    <img class="cat" src="thumbnails/channel-3.jpeg">
+  </div>
+  <div class="names">
+  <div class="oliver">
+    <p class="o">
+      oliver
+    </p>
+  </div>
+  <div class="catp">
+    <p class="tc">
+      the cat
+    </p>
+  </div>
+  <div class="popular">
+    <p class="p">
+      popular
+    </p>
+  </div>
+  </div>
+  <div class="tb">
+  <button class="tt">Tweet</button>
+  </div>
+  </div>
+
+
+    <div class="main1">
+      <div class="cat-profile">
+        <img class="cat" src="thumbnails/channel-2.jpeg">
+      </div>
+      <div class="names">
+      <div class="oliver">
+        <p class="o">
+          Ikenna Okoli
+        </p>
+      </div>
+      <div class="catp">
+        <p class="tc">
+          Web Developer
+        </p>
+      </div>
+      <div class="popular">
+        <p class="p">
+          Nigerian
+        </p>
+      </div>
+      </div>
+      <div class="tb">
+      <button class="tt">Follow</button>
+      </div>
+      </div>
+    
+      
+
+<div class="main2">
+  <div class="cat-profile">
+    <img class="cat" src="thumbnails/channel-3.jpeg">
+  </div>
+  <div class="names">
+  <div class="oliver">
+    <p class="o">
+      Olivia Gonzalez
+    </p>
+  </div>
+  <div class="catp">
+    <p class="tc">
+      Popular Actress
+    </p>
+  </div>
+  <div class="popular">
+    <p class="p">
+      Spanish
+    </p>
+  </div>
+  </div>
+  <div class="tb">
+  <button class="tt">Follow</button>
+  </div>
+  </div>
+
+  
+
+<div class="main3">
+  <div class="cat-profile">
+    <img class="cat" src="thumbnails/channel-1.jpeg">
+  </div>
+  <div class="names">
+  <div class="oliver">
+    <p class="o">
+      Marques Brownlee
+    </p>
+  </div>
+  <div class="catp">
+    <p class="tc">
+      IT Specialist 
+    </p>
+  </div>
+  <div class="popular">
+    <p class="p">
+      American
+    </p>
+  </div>
+  </div>
+  <div class="tb">
+  <button class="tt">Follow</button>
+  </div>
+  </div>
+
+  <div class="mrb-layout">
+
+  <div class="mbpixdiv">
+    <img class="mbpix" src="thumbnails/thumbnail-6.webp">
+  </div>
+
+  <p class="mr-b">
+    Mr.Beast
+  </p>
+
+
+  <div class="mrblogo-div">
+    <img class="mrblogo" src="thumbnails/channel-6.jpeg">
+  </div>
+  
+  <p class="mutual">
+    2 mutual friends
+  </p>
+
+  <div>
+    <button class="add-friends">
+      Add Friend
+    </button>
+
+  </div>
+
+  </div>
+
+  <div class="mrb-layout">
+
+    <div class="mbpixdiv">
+      <img class="mbpix" src="thumbnails/thumbnail-8.webp">
+    </div>
+  
+    <p class="mr-b">
+      Rugar Nathan
+    </p>
+  
+  
+    <div class="mrblogo-div">
+      <img class="mrblogo" src="thumbnails/channel-8.jpeg">
+    </div>
+    
+    <p class="mutual">
+      9 mutual friends
+    </p>
+  
+    <div>
+      <button class="add-friends">
+        Add Friend
+      </button>
+  
+    </div>
+  
+    </div>
+
+
+    <div class="mrb-layout">
+
+      <div class="mbpixdiv">
+        <img class="mbpix" src="thumbnails/thumbnail-7.webp">
+      </div>
+    
+      <p class="mr-b">
+        Spakita Luho
+      </p>
+    
+    
+      <div class="mrblogo-div">
+        <img class="mrblogo" src="thumbnails/channel-7.jpeg">
+      </div>
+      
+      <p class="mutual">
+        5 mutual friends
+      </p>
+    
+      <div>
+        <button class="add-friends">
+          Add Friend
+        </button>
+    
+      </div>
+    
+      </div>
+
+
+
+
+</body>
+</html>

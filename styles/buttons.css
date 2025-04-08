@@ -1,0 +1,137 @@
+
+.subscribe-button {background-color:rgb(202, 23, 23); 
+  color:white;
+  border: none; 
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-style: italic;
+  font-weight: bold;
+  padding-right: 24px;
+  padding-left: 24px;
+  border-radius: 2px; 
+  cursor: pointer;
+  margin-right: 8px;
+  transition: opacity 0.15s;}
+
+.subscribe-button:hover{opacity: 0.8;}
+
+.subscribe-button:active{opacity: 0.5;}
+
+.join-button{background-color: white;
+  border-color: rgb(127, 127, 216);
+  border-style: solid;
+  border-width: 1px;
+  color: rgb(63, 63, 154);
+  height: 35px;
+  width: 62px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition:background-color 0.15s,
+  color 0.15s ;}
+
+.join-button:hover{background-color: rgb(63, 63, 154) ;
+  color: white;}
+
+.join-button:active{opacity: 0.7;}
+
+.tweet-button{background-color: rgb(72, 136, 173);  
+  color: white;
+  border: none;
+  border-radius: 18px;
+  height: 36px;
+  width: 74px;
+  font-weight:bold;
+  font-size: 15px;
+  cursor: pointer;
+  margin-left: 8px;
+  transition: box-shadow 0.15s;}
+
+.tweet-button:hover{box-shadow:5px 5px 10px rgba(0, 0, 0, 0.15);}
+
+.Requestnow-button{background-color: black;
+  color: white;
+  height: 36px;
+  width: 105px;
+  border-width:4px;
+  border-color: white;
+  cursor: pointer;
+  margin-left: 8px;}
+
+.Addtocart-button{background-color:rgb(255, 216, 20);
+  color: black;
+  height: 36px;
+  width: 105px;
+  border: none;
+  border-color:white;
+  border-radius:18px;
+  margin-left:8px;
+  cursor: pointer;}
+
+.Signup-button{background-color:rgb(46, 164, 79);
+  color: white;
+  height:36px;
+  width: 105px;
+  border:none;
+  border-radius:8px;
+  border-color:white;
+  font-weight:bold;
+  cursor:pointer;
+  margin-left:8px;}
+
+p{display: flex;gap: 10px;}
+
+.Getstarted-button{background-color:rgb(121, 82, 179);
+  color: white;
+  height: 36px;
+  width: 105px;
+  border: none;
+  border-radius:6px;
+  cursor: pointer;
+  font-weight:bold;
+  cursor: pointer;
+  transition:background-color 1.2s, color 1.2s;}
+
+.Getstarted-button:hover{background-color:rgba(71, 12, 78, 0.95) ;
+  color: white;}
+
+.Download-button{background-color:white;
+  color:black;
+  border-radius:6px;
+  cursor:pointer;
+  border-width:1px;
+  height:36px;
+  width:105px;
+  transition: background-color 1.2s,color 1.2s;}
+
+.Download-button:hover{background-color: black;color: white;}
+
+.Applyoncompanywebsite-button{background-color: rgb(27, 97, 164);
+  color: white;
+  height: 36px;
+  width:195px;
+  border-radius: 30px;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+  transition:background-color 1.20s,color 1.20s;}
+
+.Applyoncompanywebsite-button:hover{background-color:rgb(185, 212, 230);
+  color: rgb(27, 97, 164) ;}
+
+.save-button{background-color: white;
+  color: rgb(47, 123, 199);
+  height: 36px;
+  width: 75px;
+  border-radius: 30px;
+  border-width: 1px;
+  cursor: pointer;
+  border-color: rgb(24, 124, 186);
+  border-style: solid;
+  transition: background-color 1.2s,color 1.2s;}
+
+.save-button:hover{background-color: rgb(196, 211, 227) ;
+  color:  rgb(12, 52, 91);}
+
+a{color: blue;text-decoration:underline;}
+
+a:hover{color: red;}
