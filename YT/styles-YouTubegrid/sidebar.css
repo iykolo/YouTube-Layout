@@ -1,4 +1,5 @@
-.sidebar{position: fixed;
+.sidebar{
+  position: fixed;
 left:0;
 bottom:0;
 top: 55px;
@@ -8,14 +9,29 @@ z-index: 1;
 padding-top:0;
 }
 
+.sidebar-icon{
+  height: 87px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  transition: 0.15s;
+}
 
-.sidebar-icon{height: 87px;display: flex;justify-content: center;align-items: center;flex-direction: column;cursor: pointer;transition: 0.15s;}
+.sidebar-icon:hover{
+  background-color: rgb(232, 232, 232);
+}
 
-.sidebar-icon:hover{background-color: rgb(232, 232, 232);}
+.sidebar-icon img{
+  height:25px;
+}
 
-.sidebar-icon img{height:25px;}
-
-.sidebar-icon div{font-family:Roboto,Arial;font-size: 10px;margin-top: 5px;}
+.sidebar-icon div{
+  font-family:Roboto,Arial;
+  font-size: 10px;
+  margin-top: 5px;
+}
 
 
 

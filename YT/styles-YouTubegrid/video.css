@@ -1,11 +1,89 @@
-.im{width:100%;border-radius: 10px;}
-   .pp{width:35px;border-radius: 20px;margin-top: 6px;}
-   .talk{font-weight: bold;margin-top: 6px;line-height: 20px;margin-bottom: 6px;width: 225px;font-size:15px;}
-   .marques,.stat{font-size: small;color: rgb(90, 86, 86);margin-bottom: 0;line-height:7px;}
+.im{
+   width:100%;
+   border-radius: 10px;
+}
 
+   .pp{
+      width:35px;
+      border-radius: 20px;
+      margin-top: 6px;
+      display: inline-block;
+   }
 
+   .talk{
+      font-weight: bold;
+      margin-top: 6px;
+      line-height: 20px;
+      margin-bottom: 6px;
+      width: 225px;
+      font-size:14px;
+   }
+
+   .marques,.stat{
+      font-size: small;
+      color: rgb(90, 86, 86);
+      margin-bottom: 0;
+      line-height:7px;
+   }
+   
+.px{
+   height:55px;
+   width: 55px;
+   border-radius:28px;
+   margin-top: 10px;
+   margin-right: 4px;
+}
  
+.toolt{
+   display: flex;
+   width: 230px;
+   background-color: white;
+   border-width: 1px;
+   border-style: solid;
+   border-color:white;
+   padding: 3px;
+   box-shadow: 3px 4px 1px rgba(0, 0, 0, 0.5);
+   opacity:1 ;
+   pointer-events: none;
+   position: absolute;
+   opacity: 0;
+   transition: 0.15s;
+   height: 65px;
+}
 
+   .marst{
+      margin-left: 4px;
+      margin-top: 0px;
+      font-weight: bold;
+      line-height:8px;
+   }
 
+   .one{
+      display: inline-block;
+      position: relative;
+   }
+
+   .one:hover .toolt{
+      opacity: 1;
+   }
+
+   .comby{
+      display: flex;
+      justify-content:center;
+      align-items: center;
+      background-color: rgb(59, 57, 57);
+      color: white;
+      font-family: roboto;
+      font-size: large;
+      border: none;
+      position: absolute;
+      right: 3px;
+      bottom: 3px;
+      font-weight: bold;
+      height: 40px;
+      width: 300px;
+      border-radius: 4px;
+      cursor: pointer;"
+   }
 
    
