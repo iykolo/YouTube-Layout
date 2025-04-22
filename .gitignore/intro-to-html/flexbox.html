@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>FlexboxPractice</title>
+
+<style>
+.btn{background-color: rgb(20, 111, 168);color: white;border-radius: 30px;border: none;}
+.follow{background-color: rgb(24, 162, 200);color: white;border-radius: 20px;border-color: none;height: 30px;width: 60px;}
+.img1{border-radius: 50px;border-width: 50px;}
+.Download{background-color: purple;color: white;border-width: 1px;border-color: white;border-style: solid;height: 30px;width: 70px;}
+.sch{width: 150px;border-radius: 30px;width: 250px;}
+.sch::placeholder{font-style: italic;}
+.home{font-weight: bold;color: white;}
+
+.st{flex: 1;display:flex;}
+.stt{flex: 2;}
+.chewy{margin-top: 0px;font-weight: bold;}
+.biggest{font-weight: bold;}
+.hey{color: rgb(147, 145, 145);font-weight: bold;margin-top: 0px;margin-left: 70px;}
+.ok{height: 60px;width: 60px;border-radius: 30px;}
+.super{font-weight: bold;margin-bottom: 6px;}
+.super1{font-weight:bold;color: rgb(146, 141, 141);}
+.yyy{color: rgb(146, 141, 141);}
+.whatis{width: 330px;line-height: 20px;margin-top: 0px;}
+.backend{width: 200px;margin-top: 0;}
+.jjj{height: 60px;width: 60px;border-radius: 30px;margin-top: 18px;}
+
+</style>
+
+</head>
+
+<body style="padding-bottom: 2000px;margin: 8px;">
+
+<div style="display: flex;flex-direction: row;">
+
+  <div style="background-color: lightblue;">div1 this is a flexible box</div>
+
+  <div style="background-color: lightpink;">div2<p>text</p></div>
+
+</div>
+
+<div style="display: flex;flex-direction: row;margin-top: 30px;">
+
+  <div style="background-color: lightblue;width: 100px;">div1 this is a flexible box</div>
+
+  <div style="background-color: lightpink;flex: 1;">flex1</div>
+
+  </div>
+
+
+<div style="display: flex;flex-direction: row;margin-top: 30px;">
+
+  <div style="background-color: lightblue;width: 100px;">div1 this is a flexible box</div>
+
+  <div style="background-color: lightpink;flex: 1;">flex1</div>
+
+  <div style="background-color: lightcoral;flex: 2;">div1 this is a flexible box</div>
+
+</div>
+
+<div style="display: flex;flex-direction: row;margin-top: 30px;height: 70px;border-width: 1px;border-style: solid;border-color: gray;justify-content:center">
+
+  <div style="background-color: lightblue;width: 100px;">100px</div>
+
+  <div style="background-color: lightpink;width: 100px;">100px</div>
+
+  <div style="background-color: lightseagreen;width: 100px;;">100px</div>
+
+</div>
+
+
+<div style="display: flex;flex-direction: row;margin-top: 30px;height: 70px;border-width: 1px;border-style: solid;border-color: gray;justify-content:space-between">
+
+  <div style="background-color: lightblue;width: 100px;">100px</div>
+
+  <div style="background-color: lightpink;width: 100px;">100px</div>
+
+  <div style="background-color: lightseagreen;width: 100px;;">100px</div>
+
+</div>
+
+
+<div style="display: flex;flex-direction: row;margin-top: 30px;height: 70px;border-width: 1px;border-style: solid;border-color: gray;justify-content:space-between;align-items:center;">
+
+  <div style="background-color: lightblue;width: 100px;">100px</div>
+
+  <div style="background-color: lightpink;width: 100px;">100px</div>
+
+  <div style="background-color: lightseagreen;width: 100px;;">100px</div>
+
+</div>
+
+
+<div style="display: flex;flex-direction: row;margin-top: 30px;">
+<div style="background-color: lightblue;width: 200px;">
+  200px
+</div>
+<div style="background-color: lightpink;width: 75px;">
+  75px
+</div>
+</div>
+
+
+<div style="display: flex;flex-direction: row;margin-top: 30px;">
+  <div style="background-color: lightblue;width: 50px;">
+    50px
+  </div>
+  <div style="background-color: lightpink;flex: 1;">
+    flex1
+  </div>
+  <div style="background-color: lightblue;width: 75px;">
+    75px
+  </div>
+  </div>
+  
+
+  <div style="display: flex;flex-direction: row;margin-top: 30px;justify-content: space-between;border-width: 1px;border-color: gray;border-style: solid;">
+    <div style="background-color: lightblue;width: 40px;">
+      Item1
+    </div>
+    <div style="background-color: lightpink;width: 40px;">
+      Item2
+    </div>
+    <div style="background-color: lightblue;width: 40px;">
+     Item3
+    </div>
+    <div style="background-color: lightpink;width: 40px">
+      Item4
+    </div>
+    </div>
+
+
+    <div style="display: flex;flex-direction: row;margin-top: 30px;justify-content: space-between;border-width: 1px;border-color: gray;border-style: solid;align-items: center;height: 50px;">
+      <div style="background-color: lightblue;width: 40px;">
+        Item1
+      </div>
+      <div style="background-color: lightpink;width: 40px;">
+        Item2
+      </div>
+      </div>
+
+      <div style="display: flex;flex-direction: column;border-color: gray;border-width: 1px;border-style: solid;margin-top: 8px;padding: 8px;width: 300px;">
+      <div style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;">
+        <div>
+          <p>Home</p>
+        </div>
+        <div>
+          <button class="btn">14</button>
+        </div>
+      </div>
+
+      <div style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;">
+        <div>
+          <p>Notifications</p>
+        </div>
+        <div>
+          <button class="btn">3</button>
+        </div>
+      </div>
+
+      <div style="display: flex;flex-direction: row;justify-content:space-between;align-items: center;">
+        <div>
+          <p>Messages</p>
+        </div>
+        <div>
+          <button class="btn">5</button>
+        </div>
+      </div>
+    </div>
+
+   <div style="display: flex;flex-direction: row;margin-top: 8px;justify-content: space-between;align-items: center;width: 300px;padding: 8px;">
+  
+    <div>
+        <img class="img1" src="thumbnails/channel-1.jpeg">
+      </div>
+      <div style="display: flex;flex-direction: column;line-height: 0px;">
+        <p>Oliver</p>
+        <p>The Cat</p>
+        <p>Popular</p>
+      </div>
+      <div>
+        <button class="follow">follow</button>
+      </div>
+  </div>
+
+  <div style="display: flex;flex-direction: row;margin-top: 8px;justify-content: space-between;align-items: center;width: 300px;padding: 8px;">
+  
+    <div>
+        <img class="img1" src="thumbnails/channel-1.jpeg">
+      </div>
+      <div style="display: flex;flex-direction: column;line-height: 0px;">
+        <p>Oliver</p>
+        <p>The Cat</p>
+        <p>Popular</p>
+      </div>
+      <div>
+        <button class="follow">follow</button>
+      </div>
+  </div>
+
+  <div style="display: flex;flex-direction: row;margin-top: 8px;justify-content: space-between;align-items: center;width: 300px;padding: 8px;">
+  
+    <div>
+        <img class="img1" src="thumbnails/channel-1.jpeg">
+      </div>
+      <div style="display: flex;flex-direction: column;line-height: 0px;">
+        <p>Oliver</p>
+        <p>The Cat</p>
+        <p>Popular</p>
+      </div>
+      <div>
+        <button class="follow">follow</button>
+      </div>
+  </div>
+
+    <div style="display: flex;flex-direction: row;justify-content:space-between;padding: 2px;width: 500px;border-width: 1px;border-color: gray;border-style: solid;align-items: center;background-color: purple;gap: 30px;height: 40px;margin-top: 30px;">
+      <p class="home">Home</p>
+      <input class="sch" type="text" placeholder="Search">
+      <button class="Download">Download</button>
+    </div>
+
+    <div style="display: flex;height: 70px;justify-content: start;margin-top: 30px;">
+      <div class="st" style="background-color: aquamarine;width: 100px;">item1</div>
+        <div class="stt" style="background-color: rgb(133, 209, 172);width: 200px;">item2</div>
+    </div>
+
+    <div style="width: 418px;background-color: rgb(122, 231, 231);">
+    <div><p>ALL INBOXES</p></div>
+    <div style="background-color: rgb(164, 249, 249);width: 410px;padding: 4px;margin-top:0px;margin-bottom: 0px;">
+    <div style="display: flex;margin-bottom: 0px;">
+    <div><img class="ok" src="thumbnails/channel-1.jpeg"></div>
+    <div style="display: flex;justify-content: space-between;width: 330px;align-self: start;margin-bottom: 0px;margin-left: 12px;">
+    <div><p class="chewy">Chewy Promotions</p><p class="biggest">Biggest sales of the year!</p></div>
+    <div>4:58 PM</div>
+    </div>
+     </div>
+    <div><p class="hey">Hey there! We're writing to tell you about our...</p></div>
+    </div>
+
+    <div style="background-color: rgb(164, 249, 249);width: 410px;padding: 4px;margin-top:0px;margin-bottom: 0px;">
+      <div style="display: flex;margin-bottom: 0px;">
+      <div><img class="ok" src="thumbnails/channel-1.jpeg"></div>
+      <div style="display: flex;justify-content: space-between;width: 330px;align-self: start;margin-bottom: 0px;margin-left: 12px;">
+      <div><p class="chewy">Chewy Promotions</p><p class="biggest">Biggest sales of the year!</p></div>
+      <div>4:58 PM</div>
+      </div>
+       </div>
+      <div><p class="hey">Hey there! We're writing to tell you about our...</p></div>
+      </div>
+
+      <div style="background-color: rgb(164, 249, 249);width: 410px;padding: 4px;margin-top:0px;margin-bottom: 0px;">
+        <div style="display: flex;margin-bottom: 0px;">
+        <div><img class="ok" src="thumbnails/channel-1.jpeg"></div>
+        <div style="display: flex;justify-content: space-between;width: 330px;align-self: start;margin-bottom: 0px;margin-left: 12px;">
+        <div><p class="chewy">Chewy Promotions</p><p class="biggest">Biggest sales of the year!</p></div>
+        <div>4:58 PM</div>
+        </div>
+         </div>
+        <div><p class="hey">Hey there! We're writing to tell you about our...</p></div>
+        </div>
+        </div>
+
+
+        <div style="display: flex;width: 380px;padding: 6px;background-color: rgb(252, 222, 227);margin-top: 20px;">
+        <div>
+          <img class="jjj" src="thumbnails/channel-1.jpeg">
+        </div>
+        <div style="margin-left: 6px;margin-top: 0px;">
+        <div style="width: 318px;margin-left: 3px;">
+          <p class="super">supersimple.dev <span class="super1">@SuperSimpleDev</span></p>
+          <p class="whatis">What is backend web development? A complete overview. New video is up!</p>
+        </div>
+        <div style="display: flex;">
+        <div style="background-color: rgb(201, 199, 199);height: 97.5px;width: 90px;border-top-left-radius: 20px;border-bottom-left-radius: 20px;">
+          
+        </div>
+        <div style="height: 98px;width: 228px;background-color: rgb(248, 245, 245);border-top-right-radius: 20px;border-bottom-right-radius: 20px;">
+          <p class="yyy">youtube.com</p>
+          <p class="backend">Backend web development - a complete overview (2021)</p>
+        </div>
+      </div>
+      </div>
+      </div>
+
+
+
+    <div style="display: flex;height: 120px;margin-top: 30px;margin-bottom: 40px;">
+      <div class="st" style="background-color: aquamarine;width: 100px;">item1</div>
+        <div class="stt" style="background-color: rgb(133, 209, 172);width: 200px;display: flex;justify-content: space-between;align-items: center;"><div style="display: flex;flex-direction: column;align-items:start;background-color: blue;width: 100px;"><p>item1</p><p>item2</p></div><div style="border-width: 1px;border-style: solid;width: 50px;border-color: gray;background-color: brown;">item2</div>
+    </div>
+
+ 
+    
+</body>
+
+</html>
+

@@ -83,7 +83,15 @@
       height: 40px;
       width: 300px;
       border-radius: 4px;
-      cursor: pointer;"
-   }
+      cursor: pointer;}
+
+
+      .video-grid{
+         display: grid;
+         grid-template-columns: 280px 280px 280px 280px;
+         column-gap: 13px;
+         row-gap: 40px;
+      }
+
 
    

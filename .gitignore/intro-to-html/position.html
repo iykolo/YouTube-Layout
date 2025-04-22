@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Position Practice</title>
+  <style>
+    .bottom-right{height: 30px;width: 150px;background-color: black;color: white;
+    border-width: 1px;
+  border-color: white;border-style: solid;}
+  .heda{position: fixed;
+bottom: 20px;
+right:20px;}
+
+.close{width:50px;}
+
+  </style>
+</head>
+
+<body style="height: 3000px;padding-top: 60px;padding-left: 80px;">
+  <div style="background-color: black;color: white;position: fixed;top: 0px;left: 0px;right: 0;height: 50px;">header</div>
+
+  <div style="background-color: green;color: white;
+  position: fixed;left: 0;bottom: 0;top: 50px;
+  width: 72px;">
+  Sidebar
+  </div>
+
+
+  <div style="background-color: lightblue;height: 200px;width: 200px;"></div>
+  <div style="background-color: lightpink;height: 200px;width: 200px;"></div>
+
+
+  <div class="heda">
+    <button class="bottom-right">bottom-right</button>
+  </div>
+
+
+  <div style="background-color: green;color: white;position: fixed;top: 0;bottom: 0;right: 0px;">
+    Right sidebar
+  </div>
+
+  
+  <div style="background-color:rgba(0, 0, 0, 0.7);color: white;position: fixed;top: 0;bottom: 0;right: 0px;left: 0;display: flex;justify-content: center;align-items: center;">
+  
+    <div style="background-color:white;display: flex;flex-direction: column;color: black;width: 200px;height: 130px;border-radius: 10px;padding: 10px;">
+      <strong><p>Modal Title</p></strong>
+      <p>This is a modal</p>
+      <button class="close">Close</button>
+    </div>
+
+  </div>
+
+</body>
+</html>
